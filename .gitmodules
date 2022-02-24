@@ -1,0 +1,9 @@
+[submodule "src/pytorch_utils"]
+	path = src/pytorch_utils
+	url = git@gitlab.com:jianjielin/graspplanning/vision/pytorch_utils.git
+[submodule "pointComNet/--force"]
+	path = pointComNet/--force
+	url = git@gitlab.com:jianjielin/graspplanning/vision/pytorch_utils.git
+[submodule "pointComNet/pytorch_utils"]
+	path = pointComNet/pytorch_utils
+	url = git@gitlab.com:jianjielin/graspplanning/vision/pytorch_utils.git

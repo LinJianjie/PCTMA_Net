@@ -1,0 +1,38 @@
+BootStrap: docker
+From: nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
+
+%environment
+    export PATH=/usr/local/cuda/bin:$PATH
+    export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+    export LC_ALL=C
+%post
+    apt-get -y update
+    # basic-tools:
+    apt-get -y install vim curl hostname wget unzip tar gzip bc less \
+        util-linux strace bzip2 man-db git cmake build-essential python3-pip python3-dev\
+	libgl1-mesa-dev\
+	libgomp1\
+	clang-10 clang-tools-10 clang-10-doc libclang-common-10-dev libclang-10-dev libclang1-10 clang-format-10 python3-clang-10 clangd-10 
+
+    apt-get clean
+	pip3 install numpy
+	pip3 install Cython
+    pip3 install torch==1.7.0+cu101 torchvision==0.8.1+cu101 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+    CUDA=cu101
+    pip3 install torch-scatter -f https://pytorch-geometric.com/whl/torch-1.7.0+cu110.html
+	pip3 install torch-sparse -f https://pytorch-geometric.com/whl/torch-1.7.0+cu110.html
+	pip3 install torch-cluster -f https://pytorch-geometric.com/whl/torch-1.7.0+cu110.html
+	pip3 install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.7.0+cu110.html
+	pip3 install torch-geometric
+
+    pip3 install h5py~=2.8.0
+    pip3 install scipy~=1.3.1
+    pip3 install open3d==0.10.0.0
+    pip3 install pyyaml~=5.3.1
+    pip3 install gpustat
+    pip3 install geomloss
+    pip3 install Ninja
+    pip3 install transforms3d
+
+%runscript
+    echo "pytorch envioronment"

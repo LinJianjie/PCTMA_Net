@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+python  ../pointComNet/atlasNet/train_atlas.py  --batch_size 32 --epochs 300 --checkpoint_name  best_model_atlas.pth --best_name  best_model_atlas.pth  --load_checkPoints False  --train True --evaluate True

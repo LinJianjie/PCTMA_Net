@@ -1,0 +1,31 @@
+Num_Encoder: 4
+num_head: 8
+dropout: 0.1
+d_ff: 2048
+d_model: 1024
+src_vocab: 3
+tgt_vocab: 2048
+epochs: 300
+De_numpoints: 2048
+#De_channels: [ 128,256, 512, 1024, 2048 ]
+En_channels: [ 1024 ]
+De_channels: [ 1024, 2048, 2048 ]
+train_pt: False
+train_gt: False
+train_pt_to_gt: True
+use_emd: True
+use_cd: False
+use_consistence: False
+use_dgcnn: False
+use_cmlp: False
+w_cd: 10000
+w_emd: 0.00001
+n_primitives: 32
+gene_file: False
+down_sampling: False
+combined_pc: True
+ppd_loss: False
+use_atlas: True
+fine_factor: 4
+use_pointModule: 1 #[1=atlas|3=multi_head_atlas]
+grid_scale: 0.05

@@ -1,0 +1,7 @@
+num_points: 16384
+bottleneck_size: 1024
+nb_primitives: 4
+code_nfts: 1024
+epochs: 300
+gene_file: True
+output_channels: 3

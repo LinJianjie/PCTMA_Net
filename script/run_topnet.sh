@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+python ../pointComNet/topnet/train_topnet.py --batch_size 32 --epochs 300 --checkpoint_name  best_model_topnet.pth  --best_name  best_model_topnet.pth --load_checkPoints False --train True --evaluate False

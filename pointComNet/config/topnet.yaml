@@ -1,0 +1,6 @@
+NLEVELS: 6
+code_nfts: 1024
+npts: 2048
+NFEAT: 8
+epochs: 300
+gene_file: True

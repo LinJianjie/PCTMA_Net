@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+python ../pointComNet/grNet/train_grnet.py  --batch_size 8 --epochs 300 --checkpoint_name  best_model_grnet.pth  --best_name  best_model_grnet.pth --load_checkPoints False --train True --evaluate False

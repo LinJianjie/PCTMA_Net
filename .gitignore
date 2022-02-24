@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+data
+save_ae_ply_data
+save_ply_data
+save_kitti_ply_data
+pointComNet/__pycache__/
+pointComNet/models/__pycache__/
+__pycache__
+pointComNet/utils/__pycache__/
+.vscode

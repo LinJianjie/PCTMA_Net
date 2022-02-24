@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+python ../pointComNet/pcn/train_pcn.py  --batch_size 32 --epochs 300 --checkpoint_name  best_model_pcn.pth  --best_name  best_model_pcn.pth --load_checkPoints False --train True --evaluate True

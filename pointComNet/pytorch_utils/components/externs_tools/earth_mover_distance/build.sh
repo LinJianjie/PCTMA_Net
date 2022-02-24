@@ -1,0 +1,1 @@
+python3 setup.py install --prefix=$PWD/../../../extensions_build/earch_mover_distance
