@@ -1,5 +1,5 @@
 ## PCTMA-Net: Point Cloud Transformer with Morphing Atlas-based Point Generation Network for Dense Point Cloud Completion
-###[[paper]](https://www.researchgate.net/publication/353955048_PCTMA-Net_Point_Cloud_Transformer_with_Morphing_Atlas-based_Point_Generation_Network_for_Dense_Point_Cloud_Completion)[[project page]](https://linjianjie.github.io/pctMA-Net/)	
+[[paper]](https://www.researchgate.net/publication/353955048_PCTMA-Net_Point_Cloud_Transformer_with_Morphing_Atlas-based_Point_Generation_Network_for_Dense_Point_Cloud_Completion)[[project page]](https://linjianjie.github.io/pctMA-Net/)	
 
 ### Introduction
 
